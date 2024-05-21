@@ -35,8 +35,4 @@ policy "limit-cost-by-budget" {
 #     enforcement_level = "soft-mandatory"
 # }
 
-policy "restrict-inbound-source-address-prefixes" {
-    enforcement_level = "soft-mandatory"
-}
-
 
