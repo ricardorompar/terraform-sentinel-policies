@@ -19,8 +19,24 @@ module "azure-functions" {
 }
 
 
+# policy "restrict-ec2-instance-type" {
+#    enforcement_level = "soft-mandatory"
+# }
+
+# policy "validate-providers-from-desired-regions" {
+#     enforcement_level = "soft-mandatory"
+# }
+  
 policy "limit-cost-by-budget" {
-      source= "./limit-cost-by-budget.sentinel"
-      enforcement_level = "soft-mandatory"
+       enforcement_level = "soft-mandatory"
 }
+
+# policy "restrict-vm-size" {
+#     enforcement_level = "soft-mandatory"
+# }
+
+policy "restrict-inbound-source-address-prefixes" {
+    enforcement_level = "soft-mandatory"
+}
+
 

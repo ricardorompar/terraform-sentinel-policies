@@ -1,1 +1,2 @@
-# terraform-sentinel-policies
+# sentinel-policies
+a quick repo to hold test policies
