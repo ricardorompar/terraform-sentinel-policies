@@ -3,7 +3,7 @@ module "tfplan-functions" {
 }
 
 policy "limit-cost-by-budget" {
-      source= ./limit-cost-by-budget.sentinel
+      source= limit-cost-by-budget.sentinel
       enforcement_level = "soft-mandatory"
 }
 
