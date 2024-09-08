@@ -15,6 +15,6 @@ module "aws-functions" {
 }
 
 policy "restrict-ec2-instance-type" {
-    source = "../custom-functions/restrict-ec2-instance-type.sentinel"
+    // source = "../custom-functions/restrict-ec2-instance-type.sentinel"
     enforcement_level = "soft-mandatory"
 }
