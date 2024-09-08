@@ -14,12 +14,15 @@ module "aws-functions" {
   source = "aws-functions/aws-functions.sentinel"
 }
 
+import "custom/restrict-ec2-instance-type.sentinel"
+import "custom/limit-cost-by-workspace-type.sentinel"
+
 policy "restrict-ec2-instance-type" {
-    source = "custom/restrict-ec2-instance-type.sentinel"
+    // source = "custom/restrict-ec2-instance-type.sentinel"
     enforcement_level = "soft-mandatory"
 }
 
 policy "limit-cost-by-workspace-type" {
-    source = "custom/limit-cost-by-workspace-type.sentinel"
+    // source = "custom/limit-cost-by-workspace-type.sentinel"
     enforcement_level = "hard-mandatory"
 }
