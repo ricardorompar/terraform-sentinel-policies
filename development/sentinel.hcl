@@ -14,4 +14,11 @@ module "aws-functions" {
   source = "../aws-functions/aws-functions.sentinel"
 }
 
-// 
+policy "restrict-ec2-instance-type" {
+    // source = "../custom/restrict-ec2-instance-type.sentinel"
+    enforcement_level = "soft-mandatory"
+}
+
+policy "limit-cost-by-budget" {
+    enforcement_level = "hard-mandatory"
+}
